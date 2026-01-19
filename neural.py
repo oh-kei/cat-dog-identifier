@@ -12,9 +12,7 @@ def main():
         case "retrain":
             retrain_network()
         case "train":
-            really = input("are you sure?")
-            if really == "beast":
-                train_network()
+            train_network()
         case "test":
             test_network()
         case _:
@@ -134,4 +132,5 @@ def test_network():
     print(f"The model's confidence for {predicted_name}: {chance:.2%}")
 
 if __name__ == "__main__":
+
     main()
